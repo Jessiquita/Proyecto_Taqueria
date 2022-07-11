@@ -1,0 +1,32 @@
+﻿<Window x:Class="Proyecto_Taqueria.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_Taqueria"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid Margin="0,-10,0,10">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF171717" Offset="0.987"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="43*"/>
+                <ColumnDefinition Width="37*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Login" HorizontalAlignment="Left" Margin="356,55,0,0" VerticalAlignment="Top" Height="55" Width="118" FontSize="36" Grid.ColumnSpan="2" FontFamily="Sitka Small Semibold"/>
+            <Label Content="Usuario" HorizontalAlignment="Left" Margin="386,126,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+            <TextBox x:Name="txtUser" HorizontalAlignment="Left" Margin="353,152,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+            <Label Content="Contraseña" HorizontalAlignment="Left" Margin="376,175,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+            <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="354,0,0,0" TextWrapping="Wrap"  VerticalAlignment="Center" Width="120" Grid.ColumnSpan="2"/>
+            <Button Content="Iniciar" HorizontalAlignment="Left" Margin="375,285,0,0" VerticalAlignment="Top" Background="#FFF65454"  Width="70" Click="Button_Click" Grid.ColumnSpan="2"/>
+            <Button Content="Generacion Pedidos" HorizontalAlignment="Left" Margin="286,245,0,0" VerticalAlignment="Top" Background="#FF54BBF6"  Width="114"/>
+            <Button Content="Gestion Inventario" HorizontalAlignment="Left" Margin="423,246,0,0" VerticalAlignment="Top" Background="#FF54BBF6"  Width="106" Click="Button_Click" Grid.ColumnSpan="2"/>
+
+        </Grid>
+    </Grid>
+</Window>
